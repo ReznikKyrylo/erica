@@ -1,0 +1,2589 @@
+// @import "media.sass"
+@font-face 
+    font-family: 'Micra'
+    font-style: normal
+    font-weight: 400
+    src: local('Micra'), local('Micra-Normal'),
+    url(/Fonts/micra_bb25090011e0302cafda9ce8ef096618.woff) format('woff'),
+    url(/Fonts/micra_bb25090011e0302cafda9ce8ef096618.ttf) format('truetype')
+
+@font-face 
+    font-family: 'Myriad Pro Regular'
+    src: url('/Fonts/MyriadPro-Regular.eot')
+    src: url('/Fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/Fonts/MyriadPro-Regular.woff') format('woff'),
+    url('/Fonts/MyriadPro-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+@mixin dNone()
+    display: none
+
+select 
+    // -webkit-user-select: none
+    // -moz-user-select: -moz-none
+    // -ms-user-select: none
+    // user-select: none
+
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    width: 40px
+    background-color: #f000
+    border: none
+    font-size: 12px
+    /* border: 0px solid #ff000000; */
+    outline: none
+    cursor: pointer
+    color: #ffffff
+    border-color: #ff000000
+    border-width: 0px
+    border-radius: 1px
+    background: url(/icon/arrow_white.svg) no-repeat right
+
+    &:focus
+        border: none
+select::-ms-expand 
+    display: none
+
+select 
+    option
+        border: 5px solid green
+        outline: 0
+        background: #5f5f5f
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button 
+    -webkit-appearance: none 
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus 
+    appearance: none
+    -moz-appearance: textfield
+
+
+html
+    overflow-x: hidden
+    // margin-right: calc(-1 * (100vw - 100%))    
+    
+    
+body
+    overflow-x: hidden
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    // cursor: url('/img/tooth7.png') , url('/img/tooth7.png') , auto
+
+    ul
+        margin: 0
+        padding: 0
+// .__lock
+//         overflow-y: hidden
+a, a:hover
+    text-decoration: none 
+    color: #fff
+    
+
+p,h1,h2,h3,h4,h5,h6
+    margin: 0
+    padding: 0
+
+.mr-0
+    margin-right: 0px
+
+
+.contain
+    margin: 0 auto
+    min-width: 1140px
+
+
+.contain2
+    margin: 0 auto
+.contain3
+    margin: 0 auto
+    max-width: 830px
+    
+
+header
+    height: 100vh
+    padding: 30px 0 69px 0
+    .button_down
+        display: none
+        z-index: 40
+        position: absolute
+        left: 48vw
+        bottom: 5vh
+        img
+            width: 9%
+    .pos_wrap
+        display: flex
+        position: relative
+        z-index: 50
+        transition-duration: .5s
+                                                
+
+    .header_wrap
+        display: flex
+        align-items: center
+        align-content: center
+        justify-content: space-between
+        text-align: center
+
+
+.logo    
+    a
+    font-family: Micra , sans-serif
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    
+.menu_list
+    display: flex
+    position: relative
+    .hamburger
+        margin-left: 25px
+        cursor: pointer
+        position: relative
+        z-index: 100
+            
+.list_item + .list_item
+    margin-left: 65px
+
+        
+li
+    
+    display: flex
+    align-items: center
+    list-style-type: none
+    .lng
+        color: #ffffff
+    .lang
+        color: #ffffff
+        font-size: 12px
+        a
+        &::after
+            content: ' '
+            display: inline-block
+            position: relative
+            top: -1px
+            right: -4px
+            width: 9.5px
+            height: 6px
+            background: url(/icon/arrow_white.svg) no-repeat
+    .phone
+        margin-right: -25px
+        font-size: 16px
+        color: #ffffff
+        a
+            
+        &::before
+            content: ' '
+            display: inline-block
+            position: relative
+            top: 1px
+            right: 5px
+            width: 11px
+            height: 11px
+            background: url(/icon/phone_white.svg) no-repeat
+            transform: scale(1.5)
+            // box-shadow: 0px 0px 11px 3px #ffffff47
+            // border-radius: 30%
+    .consult
+        display: block
+        // width: 75px
+        // height: 10px
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 14px
+        font-weight: 500
+        align-items: center
+        text-align: center
+
+        a
+            color: #ffffff
+            font-family: Myriad Pro Regular
+            font-weight: 400
+            
+.consult_inner
+    width: 130px
+    // height: 26px
+    padding: 7px 17px
+    background-color: #868686
+
+.header_title
+    width: 515px
+    margin-top: 150px
+    h1
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 36px
+    font-weight: 700
+    line-height: 0.01px
+    position: relative
+    z-index: 5
+    left: -311px
+.header_descr
+    margin-top: 15px
+.title_descr
+    height: 89px
+    width: 368px
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 12px
+    font-weight: 400
+    line-height: 16px
+    position: relative
+    z-index: 5
+    left: -377px
+    margin: 0 auto
+
+.action_btn
+    display: block
+    margin-top: 0px
+    text-align: center
+.call_to_action
+    background: linear-gradient(315deg, rgb(120, 120, 120) 18%, rgb(203, 203, 203) 39%, rgb(154, 154, 154) 77%)
+    width: 192px
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 12.5px
+    font-weight: 500
+    text-align: center
+    position: relative
+    z-index: 6
+    padding: 16px 20px
+    margin: 0 auto
+    left: -466px
+    margin-top: -12px
+    transition: background 0.5s ease
+    &:hover
+        background: linear-gradient(287deg, #78787879 18%, #cbcbcb9d 39%, #9a9a9ab9 77%)
+
+.social
+    
+    transform: scale(0.6)
+    margin: 0 auto
+    width: 200px
+    left: -499px
+    position: relative
+    z-index: 5
+    margin-top: 56px
+    a+a
+        margin-left: 45px
+
+    a
+        fill: #fff
+        &:hover
+            fill: #000000
+
+    
+
+
+
+
+
+
+
+
+
+	
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.slider-item
+    min-height: 100vh
+    background: url(/img/header_bg.png) center center/cover no-repeat
+    
+
+.slider
+  position: absolute
+  z-index: 1
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+  overflow: hidden
+  
+
+  .slick-dots
+    height: 226px
+    // border: 1px solid pink
+    position: absolute
+    top: 38%
+    right: 5%
+    z-index: 100
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    padding: 0
+    margin: 0
+
+    li
+        height: 36px
+        display: block
+        list-style: none
+        margin: 0px 0px
+        padding: 0px 0px
+        // &:hover
+        //   background-color: #858585
+        //   border-radius: 100%
+    .slick-active
+        // display: flex
+        // justify-content: center
+        // align-items: center
+        button
+          background-color: #858585
+          box-shadow: 0px 0px 0px 0.2px #565656
+        &::after
+          content: ''
+          position: absolute
+          transform: translate(-26.3%, -82.9%)
+          width: 20px
+          display: block
+          height: 20px
+          border: 1px solid #858585
+          border-radius: 100%
+          box-shadow: 0px 0px 0px 0.2px #565656 , 0px 0px 0px 0.2px #565656 inset
+        
+
+    button    
+      font-size: 0px
+      width: 10px
+      height: 10px
+      background-color: #fff
+      border-radius: 100%
+      border: 0px
+      padding: 0 0
+      &:hover
+        background-color: #858585
+        // box-shadow: 0px 0px 0px 0.2px #565656
+        // display: flex
+        // align-items: center
+        // justify-content: center
+        &::after
+          content: ''
+          position: absolute
+          display: block
+          width: 20px
+          display: block
+          height: 20px
+          border: 1px solid #858585
+          border-radius: 100%
+          transform: translate(-26.333%, -50%)
+
+.slide
+  height: 100vh
+  display: inline-block
+  font-size: 0
+  outline: none
+  position: relative
+  overflow: hidden
+
+.slide
+    img
+        pointer-events: none
+        user-select: none
+        position: absolute
+        top: 0
+        left: 50%
+        bottom: 0
+        margin:auto 0
+        height: 100%
+        transform: translateX(-50%)
+        min-width: 100%
+
+.slick-vertical 
+        .slick-slide
+            border: 0px
+
+    
+
+.services
+    ._activeM
+        display: block
+        animation: pov .3s ease
+
+    overflow: hidden
+    width: 100vw
+    // max-height: 944px
+    // max-height: 1554px
+    background-color: #ededed
+    padding: 54px 0px 92px 0px
+    &_title_wrap
+        display: flex
+    &_title_box
+        min-width: 230px
+        height: 436px
+        position: absolute
+        margin-left: -37px
+        // background: url('/img/mesh-gradient.jpg')
+        background: linear-gradient(315deg, rgb(118, 118, 118) 42%, rgb(141, 141, 141) 58%, rgb(132, 132, 132) 84%)
+        h2
+
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: 700
+            text-align: center
+            padding-top: 29px
+    .services_sub_title
+        width: 312px
+        margin: 50px 0px 0px 210px
+        color: #000000
+        font-family: Montserrat
+        font-size: 22px
+        font-weight: 500
+        line-height: 23px
+    .services_descr
+        margin: 16px 0 26px 210px
+        width: 339px
+        // height: 113px
+        color: #5b5d5d
+        font-family: Montserrat
+        font-size: 12px
+        font-weight: 400
+        line-height: 15px
+
+.services_box_wrapper
+    display: flex
+    flex-wrap: wrap
+    position: relative
+
+    
+            
+
+    .services_card
+        margin-bottom: 52px
+        margin-right: 22px   
+        // margin-left: 22px
+        display: flex
+        align-items: flex-end
+        width: 262px
+        height: 264px 
+
+
+            
+        .services_card_link
+            cursor: pointer
+        .card_text
+            position: relative
+            bottom: -25px
+            padding-left: 15px
+            display: flex
+            align-items: center
+            width: 230px
+            height: 58px
+            background-color: #5b5d5d
+            // width: 115px
+            // height: 13px
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 15px
+            font-weight: 400
+            // line-height: 56.29px
+            text-transform: uppercase
+        ._active_zgornytu
+            background-color: #858585
+        // &::after
+        //     content: ''
+        //     position: relative
+        //     color: #6f3838
+        //     left: -44px
+        //     bottom: -25px
+        //     width: 100%
+        //     height: 42px
+        //     background: url(/icon/add.svg) no-repeat
+
+
+
+    @for $i from 1 through 9
+        .card_#{$i}
+            background: url('/img/card_#{$i}.jpg') center center/cover no-repeat
+            &::after
+                content: ''
+                position: relative
+                color: #6f3838
+                left: -44px
+                bottom: -25px
+                width: 100%
+                height: 42px
+                background: url(/icon/add.svg) no-repeat
+
+.obstejennya_pricelist
+    display: none
+.vidbiluvanya_pricelist
+    display: none
+.ortodont_pricelist
+    display: none
+.implant_pricelist
+    display: none
+.prof_gigiena_pricelist
+    display: none
+.hirurgiya_pricelist
+    display: none
+.endodontiya_pricelist
+    display: none
+.restovratsiya_pricelist
+    display: none
+.ortopediya_pricelist
+    display: none
+
+.service_menu
+    
+    &_title
+        width: 828px
+        height: 62px
+        background-color: #5b5d5d
+        p
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+            padding-top: 12px
+    &_list_wrapper
+        display: flex
+        justify-content: space-between
+    &_list
+        ul
+
+            margin-left: 35px
+            margin-top: 20px
+            li
+
+                font-size: 15px
+                line-height: 40px
+                font-weight: 400
+                color: #363535
+
+                &::before
+                    content: '\2022'
+                    color: #858585
+                    margin-right: 25px
+                    transform: scale(4)
+                    margin-top: -7px
+
+    &_list_price
+        ul
+            margin-top: 20px
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            li
+            
+
+                font-size: 15px
+                line-height: 40px
+                font-weight: 400
+                color: #363535
+    
+
+    &_price_download
+        margin-top: 43px
+        margin-bottom: 26px
+        display: flex
+        justify-content: center
+        div
+
+            width: 332.5px
+            height: 62px
+            background-color: #5b5d5d
+
+            font-size: 15px
+            font-weight: 400
+            color: #ffffff
+
+            display: flex
+            justify-content: center
+            align-items: center
+@mixin li_prof()
+    font-size: 12px
+    width: 460px
+    line-height: 20px
+@mixin li_prof0()
+    font-size: 12px
+    width: 460px
+@mixin li_endo
+    line-height: 20px
+@mixin li_endo_lh0
+    line-height: 0px
+
+@keyframes pov
+  0%
+
+    opacity: 0
+  100%
+    opacity: 100
+
+
+
+.block_add
+    position: relative
+    width: 260px
+    background: #ededed
+    margin-bottom: 26px
+
+
+.about
+    padding-top: 87px
+    position: relative
+    // border: 1px solid black
+    background-color: #ededed
+    padding-bottom: 60px
+    &_header_wrap
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        position: relative
+        left: 90px
+        
+    &_header_box
+        position: absolute
+        z-index: 1
+        
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+        justify-content: center
+        width: 756px
+        height: 100px
+        background: url(/img/about_us.jpg)
+    &_header_title
+        margin-right: 128px
+        h2
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: 700
+            line-height: 0.02px
+
+    &_inner_pos
+        margin-top: 45px
+        z-index: 10
+        position: relative
+
+    &_inner_wrap
+        display: flex
+        img
+            
+            width: 378.5px
+            height: 438.5px
+    &_inner_info
+        margin: 80px 0px 0px 41px
+        h3
+            width: 294px
+            color: #000000
+            font-family: Montserrat                                          
+            font-size: 22px
+            font-weight: 500
+            line-height: 23px
+        p
+            margin-top: 23px
+            width: 391px
+            color: #5b5d5d
+            font-family: Montserrat
+            font-size: 12px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 16px
+
+        .read_more
+            display: block
+            margin-top: 44px
+            color: #5c5e5e
+            font-family: Montserrat
+            font-size: 22px
+            font-weight: 500
+            line-height: 23px
+
+.form_section
+    padding: 56px 0px 56px 0px
+    
+    background: url('/img/mesh-gradient.png') center center/cover no-repeat
+    background-color: #868686
+    .form_wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: 700
+            margin-bottom: 23px
+        p
+            width: 373px
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 9px
+            font-weight: 500
+            font-style: normal
+            letter-spacing: normal
+            line-height: 12px
+            text-align: center
+            margin-bottom: 22px
+        .form_body
+            outline: none
+            padding: 43px 70px
+            width: 396px
+            height: 247px
+            background-color: #ffffff
+            display: flex
+            flex-direction: column
+
+            .form_input
+                outline: none
+                border: 0
+                border-bottom: 2px solid #5a5d5d
+                margin-bottom: 37px
+            ._error
+                border-color: red
+                // &:focus
+                //     // box-shadow: 0 0 10px #5a5d5d
+            ._sending
+
+        .form_btn
+            width: 253px
+            height: 45px
+            background-color: #5b5d5d
+            border: 0
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 18px
+            font-weight: 300
+            line-height: 0.02px
+            text-align: center
+
+.doctors
+    min-height: 612px
+    position: relative
+    background-color: #ededed
+    &_box
+        z-index: 1
+        position: absolute
+        margin-left: -90px
+        width: 335px
+        height: 420px
+        background: url('/img/градиент_наши_врачи.png') center center/cover no-repeat
+        &_title
+            margin: 55px 45px 0px 140px
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 24px
+            font-weight: 700
+    &_slider_wrapper
+        
+        position: relative
+        z-index: 10
+        .doctor_slider
+            min-width: 0
+            display: flex
+            justify-content: space-between
+            // .slick-track
+            //     display: flex
+            .slick-arrow 
+                z-index: 20
+                font-size: 0
+                height: 40px
+                width: 40px
+                position: absolute
+                top: 47px
+                filter: contrast(0%)
+                transition: filter 0.4s ease 
+                &:hover
+                    filter: contrast(50%)
+                &:focus
+                    filter: contrast(35%)
+            .slick-prev 
+                left: 85%
+                border: 0px
+                background: url('/img/arrow_doc_left.svg') 0 0 / 100% no-repeat
+            .slick-next
+                left: 93%
+                border: 0px
+                background: url('/img/arrow_doc_right.png') 0 0 / 100% no-repeat
+                fill:  grey 
+            &_item
+                margin-top: 124px 
+                margin-bottom: 90px
+    .doc_card
+        
+        height: 395px
+        width: 259px
+        background-color: #fff
+        -webkit-box-shadow: 0px 10px 16px -6px rgba(34, 60, 80, 0.2)
+        -moz-box-shadow: 0px 10px 16px -6px rgba(34, 60, 80, 0.2)
+        box-shadow: 0px 10px 16px -6px rgba(34, 60, 80, 0.2)
+       
+        img
+            width: 100%
+        h2
+            margin: 20px 0px 9px 20px
+            color: #5c5e5e
+            font-size: 15px
+            font-weight: 500
+        p
+            margin-left: 20px
+            color: #8e8e8e
+            font-size: 10px
+    .anast
+        h2
+            font-size: 13px
+            margin-bottom: 2px
+
+
+.why
+    min-height: 650px
+    padding-bottom: 95px
+    background-color: #ededed
+    &_box
+        margin-left: -125px
+        width: 504px
+        height: 128px
+        background: url('/img/why_section.png') center center / cover no-repeat
+        h2
+            padding-top: 57px
+            margin-left: 125px
+            color: #ffffff
+            font-size: 24px
+            font-weight: 700
+
+    &_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .why_block
+            margin-left: 5px
+            width: 232px
+            h2
+                margin-left: 3px
+                margin-top: 62px
+                color: #727070
+                font-size: 18px
+                font-weight: 700
+
+            p
+                margin-top: 16px
+                color: #727070
+                font-size: 15px
+                line-height: 20px
+
+.history
+    padding-bottom: 40px
+    min-height: 725px
+    background-color: #ededed
+    position: relative
+    &_box
+        display: flex
+        justify-content: flex-end
+        left: 100px
+        position: relative
+
+        &_inner
+            z-index: 1
+            width: 555px
+            height: 365px
+            background: url(/img/history_bg.png) center center / cover no-repeat
+            position: absolute
+            h2
+                padding: 48px 0px 0px 100px
+                color: #ffffff
+                font-family: Montserrat
+                font-size: 24px
+                font-weight: 700
+
+    &_slider_wrapper
+        position: relative
+        z-index: 15
+        margin-top: 113px
+        .history_slider
+            
+            .slick-dots
+                position: absolute
+                right: 0
+                bottom: 65px
+                font-size: 0px
+                transform: scale(0.7)
+                
+                    
+            .slick-dots li
+                display: inline-flex
+                margin-right: 10px
+            /* Активная точка */
+            .slick-dots li.slick-active
+                button
+                    background-color: #5a5d5d
+                    box-shadow: 0px 0px 0px 0.2px #565656
+                &::after
+                    content: ''
+                    position: absolute
+                    transform: translate(-23%, 0%)
+                    width: 25px
+                    display: block
+                    height: 25px
+                    border: 2px solid #5a5d5d
+                    border-radius: 100%
+                    box-shadow: 0px 0px 0px 0.2px #565656 , 0px 0px 0px 0.2px #565656 inset
+
+            /* Элемент точки */
+            .slick-dots li button
+                transform: scale(0.9)
+                height: 14px
+                width: 14px
+                border: 0px
+                background-color: #878787
+                border-radius: 50%
+                border: 0.1px solid #4949494f
+                &:hover
+                    background-color: #5a5d5d
+                    box-shadow: 0px 0px 0px 0.2px #5a5d5d
+            .slick-arrow
+
+                font-size: 0px
+                height: 48px
+                width: 24px
+                border: none
+                position: absolute
+                top: 30%
+                filter: contrast(50%)
+                // height: 37px
+                // width: 18px
+                transition: filter 0.3s ease
+                &:hover
+                    filter: contrast(70%)
+                &:focus
+                    filter: contrast(100%)
+            .slick-prev
+                left: -45px
+                background: url(/img/smile_arrow_l.png) center center/cover no-repeat
+            .slick-next
+                right: -35px
+                background: url(/img/smile_arrow_r.png) center center/cover no-repeat
+            &_item
+                img
+                    height: 406px
+                    padding: 0px 5px
+
+                &_title
+                    margin-top: 21px
+                    color: #626262
+                    font-size: 15px
+                    font-weight: 700
+                &_descr
+                    margin-top: 16px
+                    color: #626262
+                    font-family: Montserrat
+                    font-size: 12px
+                    font-weight: 500
+                    line-height: 20px
+
+
+.comment
+    
+    padding: 83px 0px 62px 0px
+    min-height: 630px
+    position: relative
+    // border: 1px solid black
+    background-color: #ededed
+    &_slider
+        position: relative
+        z-index: 49
+        left: 390px
+        width: 500px
+        /* Точки (булиты) */
+        .slick-dots
+            font-size: 0px
+            position: relative
+            right: -45px
+            bottom: 315px
+        .slick-dots li
+            display: inline-flex
+        /* Активная точка */
+        .slick-dots li.slick-active
+            button
+
+                background-color: #727070
+        /* Элемент точки */
+        .slick-dots li button
+            width: 35px
+            height: 4px
+            border: none
+            background-color: #b0b0b0
+    &_header_wrap
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        position: relative
+        left: 90px
+        img
+            z-index: 15
+            position: absolute
+            width: 378px
+            height: 438.5px
+            left: -80px
+            margin-top: 45px
+        
+    &_header_box
+        position: absolute
+        z-index: 1
+        
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+        justify-content: center
+        width: 750px
+        height: 110px
+        background: url('/img/comments_bg.png') center center / cover no-repeat
+    &_header_title
+        margin-right: 130px
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 24px
+        font-weight: 700
+        line-height: 0.02px
+        h2
+            font-weight: 700
+            font-size: 24px
+
+    &_inner_pos
+        margin-top: 45px
+        z-index: 100
+        position: relative
+
+    &_inner_wrap
+        display: flex
+        img
+            margin-left: 5px
+            width: 378px
+            height: 438.5px
+    &_inner_info
+        margin: 155px 0px 0px 45px
+        h4
+            margin-top: 37px
+            width: 294px
+            color: #727070
+            font-family: Montserrat                                          
+            font-size: 16px
+            font-weight: 500
+            line-height: 17px
+        p
+            width: 372px
+            color: #5b5d5d
+            font-family: Montserrat
+            font-size: 12px
+            font-weight: 400
+            line-height: 16px
+        // .read_more
+        //     display: block
+        //     margin-top: 44px
+        //     color: #5c5e5e
+        //     font-family: Montserrat
+        //     font-size: 22px
+        //     font-weight: 500
+        //     line-height: 23px
+
+.map
+    position: relative
+    
+    background-color: #ededed
+    
+    &_box
+        position: absolute
+        top: 75px
+        padding: 35px 0px 65px 37px
+
+        width: 333px
+        height: 290px
+        background: url('/img/map_box.png') center center / cover no-repeat
+
+        &_logo
+            color: #000000
+            font-family: Micra
+            font-size: 21px
+            font-weight: 400
+            text-transform: uppercase
+        &_adress
+            margin-top: 20px
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 12px
+            font-weight: 700
+            &::before
+                content: ''
+                position: relative
+                top: 5px
+                display: inline-block
+                margin-right: 16px
+                width: 11px
+                height: 14.5px
+                background: url("/icon/map_icon.png") center center / cover no-repeat
+
+
+        p
+            margin-left: 27px
+            margin-top: 15px
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 12px
+            font-weight: 500
+
+        &_phone
+            display: block
+            margin-top: 20px
+            color: #ffffff
+            font-size: 12px
+            font-weight: 500
+
+            &::before
+                content: ''
+                display: inline-block
+                width: 16px
+                height: 16px
+                position: relative
+                top: 2px
+                margin-right: 11px
+                background: url("/icon/map_phone_icon.png") center center / cover no-repeat
+
+        &_email
+            margin-top: 28px
+            display: block
+            color: #ffffff
+            font-family: Montserrat
+            font-size: 12px
+            &::before
+                content: ''
+                display: inline-block
+                width: 16px
+                height: 14.5px
+                position: relative
+                top: 3px
+                margin-right: 9.5px
+                background: url("/icon/map_mail.png") center center / cover no-repeat
+
+    .contain4
+        // display: flex
+        // width: 1016px
+        // margin: 0 auto
+        
+        display: flex
+        justify-content: center
+        a
+
+        img
+            width: 1016px
+            height: 381.5px
+
+.footer
+    min-height: 223px
+    padding-top: 30px
+    padding-bottom: 35px
+    background-color: #fff
+    &_box
+        display: flex
+        justify-content: space-between
+        &_block_1
+            .logo
+                color: #000000
+                font-family: Micra
+                font-size: 21px
+                font-weight: 400
+                text-transform: uppercase
+            .block1
+                margin-top: 21px
+                color: #5b5b5b
+                font-size: 9px
+                font-weight: 400
+            .consultation
+
+                div
+                    padding: 9px 22px
+                    margin-top: 20px
+                    margin-bottom: 18px
+                    width: 120px
+                    height: 28px
+                    background-color: #5b5b5b
+                    h2
+                        
+                        color: #ffffff
+                        font-size: 11px
+                        font-weight: 500
+            .lang
+                margin-top: 18px
+                &_ukr
+                    color: #acacac
+                    font-family: Montserrat
+                    font-size: 11px
+                    font-weight: 500
+                    text-transform: uppercase
+
+                &_eng
+                    margin-left: 28px
+                    color: #acacac
+                    font-family: Montserrat
+                    font-size: 11px
+                    font-weight: 500
+                    text-transform: uppercase
+
+                .active_lang
+                    color: #5b5b5b
+            .instagramm
+                display: inline-block
+                margin-top: 15px
+                svg
+                    width: 13.5px
+                    height: 13.5px
+                    fill: #5b5b5b
+                    margin-right: 18px
+            .facebook
+                margin-top: 15px
+                svg
+                    width: 13.5px
+                    height: 13.5px
+                    fill: #5b5b5b
+        &_block_2
+            margin-top: 10px
+            h2
+                margin-left: 4px
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                font-weight: 700
+                text-transform: uppercase
+
+            .footer_box_adress
+                margin-top: 20px
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                font-weight: 700
+                &::before
+                    content: ''
+                    position: relative
+                    top: 5px
+                    display: inline-block
+                    margin-right: 13px
+                    width: 11px
+                    height: 14.5px
+                    background: url("/icon/footer_map_icon.png") center center / cover no-repeat
+            
+            p
+                margin-left: 26px
+                margin-top: 13px
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                font-weight: 500
+            .footer_box_phone
+                margin-top: 20px
+                display: block
+                color: #5b5b5b
+                font-size: 12px
+                font-weight: 500
+
+                &::before
+                    content: ''
+                    display: inline-block
+                    width: 16px
+                    height: 16px
+                    position: relative
+                    top: 2px
+                    margin-right: 11px
+                    background: url("/icon/footer_phone.png") center center / cover no-repeat
+            
+            .footer_box_email
+                margin-top: 23px
+                display: block
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                &::before
+                    content: ''
+                    display: inline-block
+                    width: 16px
+                    height: 14.5px
+                    position: relative
+                    top: 3px
+                    margin-right: 9.5px
+                    background: url("/icon/footer_mail.png") center center / cover no-repeat
+
+        &_block_3
+            margin-top: 10px
+            h2
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                font-weight: 700
+                text-transform: uppercase
+            ul
+                margin-top: 20px
+                li
+                    a
+                        margin-bottom: 9px
+                        color: #5b5d5d
+                        font-family: Montserrat
+                        font-size: 12px
+                        font-weight: 500
+
+
+        &_block_4
+            margin-top: 10px
+            h2
+                color: #5b5b5b
+                font-family: Montserrat
+                font-size: 12px
+                font-weight: 700
+                text-transform: uppercase
+            ul
+                margin-top: 20px
+                li
+                    a
+                        margin-bottom: 9px
+                        color: #5b5d5d
+                        font-family: Montserrat
+                        font-size: 12px
+                        font-weight: 500
+
+.certificats
+    position: relative
+    display: flex
+    min-height: 480px
+    background: url("/img/bg_certificats.png") center center / cover no-repeat
+    padding: 52px 0px 70px 0px 
+    .contain5
+        min-width: 1px
+        margin: 0 auto
+    &_slider       
+        min-width: 0
+        display: flex
+        justify-content: center
+
+        .slick-list
+            padding: 0px 0px !important
+            
+
+        .slick-dots
+            position: absolute
+            display: flex
+            bottom: -40px
+            font-size: 0px
+            transform: scale(0.7)
+
+
+        .slick-dots li
+            display: inline-flex
+            margin-right: 10px
+
+        /* Активная точка */
+        .slick-dots li.slick-active
+            button
+                background-color: #5a5d5d
+                box-shadow: 0px 0px 0px 0.2px #565656
+                &::after
+                    content: ''
+                    position: absolute
+                    transform: translate(-48%, -50%)
+                    width: 25px
+                    display: block
+                    height: 25px
+                    border: 2px solid #5a5d5d
+                    border-radius: 100%
+                    box-shadow: 0px 0px 0px 0.2px #565656 , 0px 0px 0px 0.2px #565656 inset
+
+        /* Элемент точки */
+        .slick-dots li button
+            transform: scale(0.9)
+            height: 14px
+            width: 14px
+            border: 0px
+            background-color: #878787
+            border-radius: 50%
+            border: 0.1px solid #4949494f
+            &:hover
+                background-color: #5a5d5d
+                box-shadow: 0px 0px 0px 0.2px #5a5d5d
+
+
+        &_item          
+            transition: transform 0.6s ease      
+            transform: scale(0.8)    
+            // text-align: center
+            // margin: 0px 26px
+            cursor: pointer
+        
+            img
+                display: inline-flex
+                width: 248.5px
+                height: 360px
+                box-shadow: 0px 16px 11px -6px rgba(68, 71, 73, 1)
+            .certif_1
+                width: 531px
+            .certif_2
+                width: 531px
+            .certif_3
+                width: 531px      
+            .certif_4
+                width: 531px       
+            .certif_5
+                width: 531px                                
+        .slick-center
+            transform: scale(0.9)
+
+
+.burger
+    
+    &_overlay
+        position: fixed
+        background-color: #000000ce
+        top: 0
+        right: -110%
+        width: 100%
+        height: 100%
+        z-index: 50
+        padding: 50px
+        transition: all 0.5s ease
+    .__active
+        right: -75%
+    ul
+        margin-top: 20px
+        li
+            margin-top: 15px
+            display: table
+            a
+                color: white
+            .logo
+                position: absolute
+                top: 10px
+                font-family: Micra , sans-serif
+                font-size: 16px
+                font-weight: 400
+                text-transform: uppercase
+
+    .close_menu
+        transform: scale(0.8)
+        position: absolute
+        top: 20px
+        left: 20%
+        cursor: pointer
+        svg
+            fill: white
+
+
+@media screen and (max-width: 746px)
+    .doctors_slider_wrapper
+        .doctor_slider
+            .slick-next
+                left: 92%
+
+    .about_inner_wrap 
+        img
+            transform: scale(0.8)
+            margin: -23px -54px 0 -26px
+    .history_box_inner 
+        h2
+            padding: 48px 0px 0 74px
+    .comment_header_wrap
+        img
+            transform: scale(0.9)
+    .comment_inner_info
+        margin: 155px 0px 0px 31px
+    .comment_slider
+        .slick-dots
+            right: -21px
+    .why_wrapper
+        justify-content: space-evenly
+@media screen and (max-width: 860px)
+    .footer_box
+        justify-content: space-around
+
+@media screen and (max-width: 980px)
+
+    .comment_slider 
+        .slick-dots 
+            li 
+                button
+                    width: 28px
+    .certificats
+        display: block
+
+@media screen and (max-width: 749px)
+    .button_down
+        display: inline !important
+    .header
+        .about_inner_info 
+            h3
+                width: 2401px
+            p
+                width: 184px
+@media screen and (max-width: 830px)
+    .button_down
+        display: inline !important
+    .header
+        .contain
+            min-width: 666px
+        .header_title
+            left: -85px
+        .title_descr
+            left: -150px
+        .call_to_action
+            left: -245px
+        .social 
+            left: -280px
+        .pos_wrap
+            position: fixed !important
+            z-index: 50
+            width: 100vw
+
+    .about_inner_info 
+        h3
+            width: 300px
+        p
+            width: 312px
+    .services_box_wrapper
+        justify-content: center
+        .card_2
+            margin-right: 22px
+        .card_3
+            margin-right: 22px !important
+        .card_4
+            margin-right: 22px
+        .card_6
+            margin-right: 22px !important
+        .card_8
+            margin-right: 23px
+        .card_9
+            margin-right: 23px !important
+        .service_menu_title
+            width: 568px
+        .endodontiya_pricelist
+            .service_menu_list_price 
+                ul
+                    margin-top: 10px
+                    li
+                        padding-bottom: 10px
+                .li_end1
+                    @include li_endo_lh0
+
+            .service_menu_list
+                width: 488px
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 25px
+        .ortodont_pricelist 
+            .service_menu_list
+                width: 485px
+                ul
+                    
+                    li
+                        font-size: 12px
+        .hirurgiya_pricelist
+            .service_menu_list
+                width: 485px
+                ul
+                    width: 456px
+                    li
+                        line-height: 40px
+                        &:nth-child(5)
+                            line-height: 20px
+                            
+            .service_menu_list_price
+                ul
+                    li
+                        
+                            
+
+                        
+
+        .prof_gigiena_pricelist
+            .li_prof
+                @include li_prof
+            .li_prof0
+                @include li_prof0
+
+
+    .history
+        .contain3
+            max-width: 695px
+        .history_slider_wrapper
+            .history_slider_item 
+                img
+                    height: 336px
+
+    .doctors
+        .contain3
+            max-width: 695px
+        .doc_card 
+            height: 369px
+            width: 223px
+    .certificats
+        .contain5 
+            max-width: 728px
+    .comment_inner_info 
+        p
+            width: 245px
+    .comment_slider 
+        .slick-dots
+            bottom: 442px
+    .comment_slider 
+        .slick-dots 
+            li
+                button
+                    width: 18px
+    .why_box
+        margin-left: -100px
+    .why_wrapper 
+        .why_block 
+            margin-left: 10px
+    .map_box
+        z-index: 5
+    .map .contain4 
+        img 
+            left: 65px
+            position: relative
+    .footer_box
+        justify-content: space-around
+
+
+@media screen and (min-width: 1200px)
+    .button_down
+        display: none
+    .pos_wrap
+        background-color: #01010000 !important
+        transition-duration: 0s !important
+
+@media screen and (min-width: 649px) and (max-width: 705px) 
+
+    .about
+        .about_inner_info 
+            p
+                width: 290px !important
+
+
+    
+@media screen and (min-width: 599px) and (max-width: 705px) 
+
+    .button_down
+        display: inline !important
+    header
+        .contain
+            min-width: 515px !important
+        .header_title
+            left: -60px !important
+            width: 390px !important
+        .title_descr
+            left: -68px !important
+        .call_to_action
+            left: -157px !important
+        .social 
+            left: -191px !important
+        nav
+            ul
+                li
+                    .phone
+                        @include dNone
+                    .consult_inner
+                        @include dNone
+                    select
+                        @include dNone
+    .about
+        padding-top: 24px
+        .about_inner_wrap
+            img
+                transform: scale(0.7)
+                margin-left: -58px
+                margin-top: -30px
+                
+        .about_inner_info 
+            margin: 60px 0px 0px 30px
+            h3
+                width: 270px
+            p
+                width: 245px
+    .service_menu_list_price
+        ul
+            margin-right: 10px 
+    .doctors_slider_wrapper
+        .doctor_slider
+            .slick-prev
+                left: 82%
+
+    .history
+        min-height: 460px
+        .contain3
+            max-width: 530px
+        .history_slider_wrapper
+            margin-top: 62px
+            .history_slider_item 
+                img
+                    height: 268px
+        .history_box_inner
+            height: 86px
+            h2
+                padding: 16px 0px 0px 100px
+
+    .doctors
+        .contain3
+            max-width: 530px
+    .certificats
+        .contain5 
+            max-width: 600px
+
+    .comment_header_wrap 
+        img
+            transform: scale(0.8)
+            left: -128px
+    .comment_slider 
+        left: 305px
+
+
+    .why_wrapper
+        justify-content: space-evenly
+    .map 
+        .contain4 
+            img 
+                left: -23px
+    .map_box
+        top: 32px
+        width: 239px
+        height: 268px
+    .footer_box
+        flex-direction: column
+        align-items: center
+    .footer_box_block_1
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        .lang
+            @include dNone
+        .facebook
+            margin-top: 0px
+            position: relative
+            top: -24px
+            left: 10px
+        .instagramm
+            margin-top: 0px
+            margin-left: -16px
+    .footer_box_block_2
+        display: flex
+        margin-top: 0px
+        flex-direction: column
+        align-items: center
+    .footer_box_block_3
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+    .footer_box_block_4
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
+@media screen and (min-width: 480px) and (max-width: 599px) 
+
+    .button_down
+        display: inline !important
+    header
+        .slider
+            .slick-dots
+                right: 7%
+        .contain
+            min-width: 448px !important
+        .header_title
+            left: -27px !important
+            width: 390px !important
+        .title_descr
+            left: -35px !important
+        .call_to_action
+            left: -124px !important
+        .social 
+            left: -159px !important
+        nav
+            ul
+                li
+                    .phone
+                        @include dNone
+                    .consult_inner
+                        @include dNone
+                    select
+                        @include dNone
+    .about
+        padding-top: 24px
+        .about_header_box
+
+        .about_inner_wrap
+            img
+                transform: scale(0.5)
+                margin-left: -95px
+                margin-top: -68px
+                
+        .about_inner_info 
+            margin: 60px 0px 0px -20px
+            h3
+                width: 270px
+            p
+                width: 245px
+    .services_title_box
+        min-width: 200px 
+        h2
+            margin-left: 33px
+    .services_sub
+        margin-left: -45px
+    .services    
+        .services_sub_title
+            width: 288px
+            line-height: 25px
+        .services_descr
+            width: 214px
+            margin-left: 216px
+
+    .service_menu_list_price
+        ul
+            margin-right: 10px 
+    .services_box_wrapper
+        .service_menu_title
+            width: 440px
+
+    .doctors_slider_wrapper
+        .doctor_slider
+            .slick-prev
+                left: 82%
+
+    .history
+        min-height: 460px
+        .contain3
+            max-width: 480px
+        .history_slider_wrapper
+            margin-top: 62px
+            .history_slider_item 
+                img
+                    height: 240px
+                h3
+                    margin-left: 20px
+                p
+                    margin-left: 20px
+        .history_box_inner
+            height: 86px
+            h2
+                padding: 16px 0px 0px 90px
+
+    .doctors
+        .contain3
+            max-width: 480px
+    .doctors_slider_wrapper
+        margin-left: 15px
+        .doctor_slider
+            .slick-prev
+                left: 80%
+            .slick-next
+                left: 90%
+    .certificats
+        .contain5 
+            max-width: 480px
+        .certif_1
+            width: 480px
+        .certif_2
+            width: 480px
+        .certif_3
+            width: 480px  
+        .certif_4
+            width: 480px
+        .certif_5
+            width: 480px    
+        .certificats_slider
+            left: 1.5%
+    .comment
+        padding-top: 50px
+        padding-bottom: 0px
+    .comment_header_wrap 
+        img
+            transform: scale(0.6)
+            left: -152px
+            margin-top: 0px
+    .comment_slider 
+        left: 222px
+    .comment_inner_info 
+        p
+            width: 197px
+    .comment_slider 
+        .slick-dots 
+            bottom: 559px
+    .comment_slider
+        .slick-dots
+            right: -33px
+            li
+                button 
+                    width: 15px
+
+
+
+
+
+    .why_wrapper
+        justify-content: space-evenly
+    .map 
+        .contain4 
+            img 
+                left: -50px
+    .map_box
+        top: 32px
+        width: 239px
+        height: 268px
+    .footer_box
+        flex-direction: column
+        align-items: center
+    .footer_box_block_1
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        .lang
+            @include dNone
+        .facebook
+            margin-top: 0px
+            position: relative
+            top: -24px
+            left: 10px
+        .instagramm
+            margin-top: 0px
+            margin-left: -16px
+    .footer_box_block_2
+        display: flex
+        margin-top: 0px
+        flex-direction: column
+        align-items: center
+    .footer_box_block_3
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+    .footer_box_block_4
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+
+    .services_box_wrapper
+        .ortodont_pricelist
+            .service_menu_list
+                width: 345px
+                ul
+                    li
+                        line-height: 1.5
+            .service_menu_list_price
+                ul
+                    margin-top: 17px
+                    li
+                        font-size: 13px
+                        line-height: 36px
+        .implant_pricelist
+            .service_menu_list
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 36px
+            .service_menu_list_price
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 36px
+        .prof_gigiena_pricelist
+
+            .li_prof0
+                width: 270px
+                line-height: 20px
+            .li_prof
+                width: 300px
+            .service_menu_list_price
+                ul
+                    margin-top: 10px
+                    li
+                        font-size: 12px
+                        line-height: 50px
+        .endodontiya_pricelist
+            .service_menu_list
+                width: 355px
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 23px
+            .service_menu_list_price
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 36px
+        .hirurgiya_pricelist
+            .service_menu_list
+                width: 355px
+                margin-top: 5px
+                ul
+                    
+                    width: 311px
+                    li  
+                        line-height: 25px
+                        &:nth-child(5)
+                            line-height: 20px
+                            
+            .service_menu_list_price
+                ul
+                    margin-top: 27px
+                    li
+                        &:nth-child(2)
+                            margin-top: 14px
+                        &:nth-child(3)
+                            margin-top: -4px   
+                        &:nth-child(4)
+                            margin-top: -10px    
+                        &:nth-child(5)
+                            margin-top: -12px       
+
+@-moz-document url-prefix()
+    .certificats_slider 
+        .slick-dots
+            li
+                button
+                    width: 10px
+                    height: 10px
+    .certificats_slider
+        .slick-dots
+            li.slick-active
+                button
+                    &::after
+                        transform: translate(-50% , -50%)
+
+@media screen and (max-width: 480px)
+    nav
+        .list_item + .list_item
+            margin-left: 0px
+    .button_down
+        display: inline !important
+
+    header
+        .hamburger
+            margin-right: -5px
+        .logo
+            font-size: 12px
+            margin-left: -18px
+            
+        .slider
+            .slick-dots
+                right: 9%
+        .contain
+            min-width: 280px !important
+            
+        .header_title
+            left: -30px !important
+            width: 245px !important
+            h1
+                font-size: 27px
+        .title_descr
+            left: -35px !important
+            width: 233px
+            p
+                font-size: 10px
+        .call_to_action
+            left: -56px !important
+            margin-top: 12px
+        .social 
+            left: -91px !important
+            margin-top: 33px
+        nav
+            ul
+                li
+                    .phone
+                        @include dNone
+                    .consult_inner
+                        @include dNone
+                    select
+                        @include dNone
+    .about
+        padding-bottom: 0px
+        padding-top: 24px
+        .about_header_box
+            height: 80px
+        .about_header_title
+            h2
+                font-size: 18px
+        .about_inner_wrap
+            img
+                transform: scale(0.4)
+                margin-left: -107px
+                margin-top: -168px
+                
+        .about_inner_info 
+            margin: 60px 0px 0px -39px
+            .tire
+                display: none
+            .stom
+                font-size: 16px
+
+            h3
+                width: 130px
+            p
+                width: 245px
+                margin-left: -120px
+    .services_title_box
+        min-width: 200px 
+        height: 60px
+        h2
+            margin-left: 33px
+            padding-top: 16px
+            font-size: 18px
+    .services_sub
+        margin-left: -183px
+        margin-top: 15px
+    .services
+        padding-bottom: 0
+        padding-top: 24px    
+        .services_sub_title
+            width: 288px
+            line-height: 25px
+        .services_descr
+            width: 214px
+            margin-left: 240px
+    .service_menu_list_wrapper
+        justify-content: space-evenly
+    .service_menu_list_price
+        ul
+            margin-right: 10px 
+            margin-top: 0
+
+    .services_box_wrapper
+        .service_menu_title
+            width: 320px
+    .service_menu_list
+        ul
+            margin-top: 0
+            margin-left: 15px
+            li
+                &::before
+                    margin-right: 15px
+
+    .doctors_slider_wrapper
+        .doctor_slider
+            .slick-prev
+                left: 82%
+
+    .history
+        padding-bottom: 50px
+        padding-top: 24px
+        min-height: 400px
+        .contain3
+            // max-width: 320px
+        .history_slider_wrapper
+            margin-top: 62px
+            .history_slider_item 
+                img
+                   max-width: 100%
+                   height: auto
+                h3
+                    margin-left: 20px
+                p
+                    margin-left: 20px
+        .history_box_inner
+            height: 86px
+            h2
+                font-size: 18px
+                padding: 23px 0px 0px 175px
+
+    .doctors
+        min-height: 573px
+        &_box
+            width: 297px
+
+        &_box_title
+            font-size: 18px
+        .contain3
+            max-width: 320px
+    .doctors_slider_wrapper
+        margin-left: 15px
+        .doctor_slider
+            .slick-prev
+                left: 67%
+            .slick-next
+                left: 82%
+    .certificats
+        min-height: 360px
+        &_slider_item 
+            img
+                box-shadow: 0px 15px 5px -9px #444749
+        .contain5 
+            max-width: 480px
+        .certif_1
+            width: 320px
+            height: auto
+        .certif_2
+            width: 320px
+            height: auto
+        .certif_3
+            width: 320px
+            height: auto
+        .certif_4
+            width: 320px
+            height: auto
+        .certif_5
+            width: 320px
+            height: auto   
+        .certificats_slider
+            left: 0
+    .comment
+        padding-top: 50px
+        padding-bottom: 0px
+    .comment_header_wrap 
+        img
+            transform: scale(0.35)
+            left: -202px
+            margin-top: -136px
+    .comment_header_title
+        h2
+            font-size: 18px
+    .comment_slider 
+        left: 33px
+    .comment_inner_info 
+        margin-top: 170px
+        p
+            width: 197px
+    .comment_slider 
+        .slick-dots 
+            bottom: 567px
+            li
+                button
+                    width: 10px !important
+    .comment_slider
+        .slick-dots
+            right: -114px
+            li
+                button 
+                    width: 15px
+
+
+
+    .why
+        padding-bottom: 50px
+    .why_box
+        height: 80px
+        h2
+            padding-top: 30px
+            margin-left: 191px
+            font-size: 18px
+    .why_wrapper
+        justify-content: space-evenly
+    .form_section
+        .form_wrap
+            h2
+                font-size: 22px
+            p
+                width: 271px
+
+    .map 
+        
+        .contain4 
+            img 
+                left: -65px
+                
+
+    .map_box
+        top: 32px
+        width: 239px
+        height: 268px
+    .footer_box
+        flex-direction: column
+        align-items: center
+    .footer_box_block_1
+        display: flex
+        flex-direction: column
+        align-content: center
+        align-items: center
+        .lang
+            @include dNone
+        .facebook
+            margin-top: 0px
+            position: relative
+            top: -24px
+            left: 10px
+        .instagramm
+            margin-top: 0px
+            margin-left: -16px
+    .footer_box_block_2
+        display: flex
+        margin-top: 0px
+        flex-direction: column
+        align-items: center
+    .footer_box_block_3
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+    .footer_box_block_4
+        display: flex
+        flex-direction: column
+        align-items: center
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+
+    .services_box_wrapper
+        .ortodont_pricelist
+            .service_menu_list_wrapper
+                justify-content: space-around
+            .service_menu_list
+                width: 146px
+                ul
+                    margin-top: 10px
+                    li
+                        line-height: 1.5
+                        margin-bottom: 10px
+            .service_menu_list_price
+                ul
+                    margin-top: 25px
+                    li
+                        font-size: 13px
+                        // line-height: 36px
+                        margin-bottom: 50px
+                        &:nth-child(2)
+                            margin-top: -5px
+                        &:nth-child(4)
+                            margin-top: 7px
+                        &:last-child
+                            margin-top: 12px
+
+
+                            
+        .implant_pricelist
+            .service_menu_list
+                ul
+                    width: 195px
+                    li
+                        font-size: 12px
+                        line-height: 36px
+                        &:nth-child(2)
+                            line-height: 20px
+                            width: 200px
+                        &:nth-child(5)
+                            line-height: 20px
+                        &:last-child
+                            line-height: 20px
+                        
+                            
+            .service_menu_list_price
+                ul
+                    margin-right: 30px
+                    width: 64px
+                    li
+                        margin-bottom: 5px
+                        font-size: 12px
+                        line-height: 36px
+                        &:nth-child(1)
+                            margin-bottom: 3px
+                        &:nth-child(2)
+                            margin-bottom: 5px    
+                        &:nth-child(3)
+                            margin-top: -5px
+                        &:nth-child(4)
+                            margin-top: -5px
+                        &:nth-child(5)
+                            margin-top: -5px
+                        // &:last-child
+                        //     line-height: 20px
+        .prof_gigiena_pricelist
+
+            .service_menu_list_wrapper
+            justify-content: space-between
+            .service_menu_list
+                margin-top: 10px
+            .li_prof0
+                width: 222px
+                line-height: 20px
+                margin-bottom: 10px
+            .li_prof
+                width: 222px
+            .service_menu_list_price
+                ul
+                    margin-top: 15px
+                    margin-right: 30px
+                    li
+                        font-size: 12px
+                        line-height: 50px
+                        margin-bottom: 1px
+        .endodontiya_pricelist
+            .service_menu_list
+                width: 215px
+                ul
+                    margin-top: 10px
+                    li
+                        margin-bottom: 5px
+                        font-size: 12px
+                        line-height: 23px
+            .service_menu_list_price
+                ul
+                    li
+                        font-size: 12px
+                        line-height: 36px
+                        &:nth-child(1)
+                            margin-top: 6px
+                            margin-bottom: 4px
+                        &:nth-child(2)
+                            margin-top: 20px
+                            margin-bottom: 2px
+                        &:nth-child(3)
+                            margin-top: 33px
+                        &:nth-child(4)
+                            margin-top: 27px
+                        &:nth-child(5)
+                            margin-top: 28px
+                        &:nth-child(6)
+                            margin-top: 40px
+        .restovratsiya_pricelist
+            .service_menu_list
+                width: 211px
+                ul
+                    margin-top: 10px
+                    li
+                        font-size: 14px
+                        &:nth-child(1)
+                            line-height: 20px
+                        &:nth-child(6)
+                            line-height: 20px
+            .service_menu_list_price
+                ul
+                    margin-top: 12px
+                    li
+                        &:first-child
+                            margin-top: -4px
+                            margin-bottom: 2px
+        .ortopediya_pricelist 
+            .service_menu_list_wrapper
+                justify-content: center
+            .service_menu_list
+
+                ul
+                    margin-left: 10px
+                    li
+                        font-size: 12px
+
+ 
+            .service_menu_list_price
+                ul
+
+                    li
+                        font-size: 12px
+        .hirurgiya_pricelist
+            .service_menu_list
+                width: 211px
+                margin-top: 10px
+                ul
+                    
+                    width: 212px
+                    li  
+                        font-size: 12px
+                        line-height: 20px
+                        &:nth-child(5)
+                            line-height: 20px
+                            
+            .service_menu_list_price
+                ul
+                    margin-top: 10px
+                    li
+                        font-size: 12px 
+                        &:nth-child(2)
+                            margin-top: 0px
+                        &:nth-child(3)
+                            margin-top: -10px   
+                        &:nth-child(4)
+                            margin-top: -10px    
+                        &:nth-child(5)
+                            margin-top: 10px       
+
+@media screen and (min-width: 1000px) and (max-width: 1160px)
+    header
+        .contain
+            min-width: 860px
+        .social
+            left: -362px
+        .call_to_action
+            left: -328px
+        .title_descr
+            left: -236px
+
+        .header_title
+            left: -170px
+@media screen and (min-width: 830px) and (max-width: 1000px)
+    header
+        .contain
+            min-width: 768px
+        .social
+            left: -316px
+        .call_to_action
+            left: -282px
+        .title_descr
+            left: -189px
+
+        .header_title
+            left: -123px
+@media screen and (min-width: 705px) and (max-width: 829px)
+    header
+        .contain
+            min-width: 860px
+        .social
+            left: -362px
+        .call_to_action
+            left: -328px
+        .title_descr
+            left: -236px
+
+        .header_title
+            left: -170px
+@media screen and (max-width: 660px)
+    .burger
+        .__active
+            right: -65%
+        .close_menu
+            left: 25%
+@media screen and (max-width: 475px)
+    .burger
+        .__active
+            right: -50%
+        .close_menu
+            left: 35%
+            top: 10px
+@media screen and (max-width: 340px)
+    .burger
+        .__active
+            right: -45%
+        .close_menu
+            left: 40%
+            top: 10px
